@@ -7,6 +7,7 @@ using System.IO;
 using System.Windows;
 using System.Windows.Interop;
 using System.Windows.Media.Imaging;
+using Point = System.Drawing.Point;
 
 namespace Edu.CommonLibCore
 {
@@ -255,6 +256,38 @@ namespace Edu.CommonLibCore
                return bitmapSource;*/
 
             return null;
+        }
+
+        #endregion
+
+
+        #region 屏幕截图
+
+        /// <summary>
+        /// 截取全屏幕图像
+        /// </summary>
+        /// <returns>屏幕位图</returns>
+        public static Bitmap GetFullScreen()
+        {
+            Bitmap mimage = new Bitmap(System.Windows.Forms.Screen.PrimaryScreen.WorkingArea.Width, System.Windows.Forms.Screen.PrimaryScreen.WorkingArea.Height);
+            Graphics gp = Graphics.FromImage(mimage);
+            gp.CopyFromScreen(new Point(System.Windows.Forms.Screen.PrimaryScreen.Bounds.X, System.Windows.Forms.Screen.PrimaryScreen.Bounds.Y), new Point(0, 0), mimage.Size, CopyPixelOperation.SourceCopy);
+            gp.Dispose();
+            return mimage;
+        }
+
+
+        /// <summary>
+        /// 截取全屏幕图像
+        /// </summary>
+        /// <returns>屏幕位图</returns>
+        public static Bitmap GetFullScreenWithBar()
+        {
+            Bitmap mimage = new Bitmap(System.Windows.Forms.Screen.PrimaryScreen.Bounds.Width, System.Windows.Forms.Screen.PrimaryScreen.Bounds.Height);
+            Graphics gp = Graphics.FromImage(mimage);
+            gp.CopyFromScreen(new Point(System.Windows.Forms.Screen.PrimaryScreen.Bounds.X, System.Windows.Forms.Screen.PrimaryScreen.Bounds.Y), new Point(0, 0), mimage.Size, CopyPixelOperation.SourceCopy);
+            gp.Dispose();
+            return mimage;
         }
 
         #endregion
