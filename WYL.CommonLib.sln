@@ -3,7 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33205.214
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WYL.CommonLib", "WYL.CommonLib.csproj", "{9F651FEE-DF18-4BC0-B4D5-E2FA98D8A539}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{96C27597-7588-46EA-B9BA-447092C7F976}"
+	ProjectSection(SolutionItems) = preProject
+		Directory.Build.props = Directory.Build.props
+		Directory.Build.targets = Directory.Build.targets
+		LICENSE = LICENSE
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WYL.CommonLib", "WYL.CommonLib\WYL.CommonLib.csproj", "{AB8BE74B-D987-4154-B636-1C978193EBAD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,10 +19,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{9F651FEE-DF18-4BC0-B4D5-E2FA98D8A539}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{9F651FEE-DF18-4BC0-B4D5-E2FA98D8A539}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{9F651FEE-DF18-4BC0-B4D5-E2FA98D8A539}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{9F651FEE-DF18-4BC0-B4D5-E2FA98D8A539}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AB8BE74B-D987-4154-B636-1C978193EBAD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AB8BE74B-D987-4154-B636-1C978193EBAD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AB8BE74B-D987-4154-B636-1C978193EBAD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AB8BE74B-D987-4154-B636-1C978193EBAD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
