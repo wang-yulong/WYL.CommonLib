@@ -10,10 +10,13 @@
     <AllowedOutputExtensionsInPackageBuildOutputFolder>$(AllowedOutputExtensionsInPackageBuildOutputFolder);.pdb</AllowedOutputExtensionsInPackageBuildOutputFolder>
   </PropertyGroup>
   
-
-  <PropertyGroup Condition="'$(TF_BUILD)' == 'true'">
+ <!--Condition="'$(TF_BUILD)' == 'true'" TF自动构建，暂时不知道用法-->
+ <!--以下注释是持续构建，不加NugetPackageExplorer会有异常提示-->
+  <PropertyGroup >
     <ContinuousIntegrationBuild>true</ContinuousIntegrationBuild>
   </PropertyGroup>
+
+
 
   <ItemGroup>
     <PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.0.0" PrivateAssets="All"/>
