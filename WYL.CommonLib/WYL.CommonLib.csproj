@@ -12,6 +12,8 @@
     <PackageReleaseNotes>基础类库封装</PackageReleaseNotes>
     <PackageLicenseFile>LICENSE</PackageLicenseFile>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+	<ContinuousIntegrationBuild>true</ContinuousIntegrationBuild>
+	<GenerateDocumentationFile>True</GenerateDocumentationFile>
   </PropertyGroup>
 
   <ItemGroup>
