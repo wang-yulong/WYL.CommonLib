@@ -43,6 +43,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Reference Include="Interop.NetFwTypeLib">
+      <HintPath>..\Dlls\Interop.NetFwTypeLib.dll</HintPath>
+    </Reference>
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
     <Reference Include="System.Management" />
