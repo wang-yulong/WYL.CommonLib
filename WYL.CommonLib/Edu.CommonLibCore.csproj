@@ -13,7 +13,10 @@
     <PackageLicenseFile>LICENSE</PackageLicenseFile>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
 	<GenerateDocumentationFile>True</GenerateDocumentationFile>
+	<AssemblyVersion>1.0.0.18</AssemblyVersion>
+	<FileVersion>1.0.0.18</FileVersion>
 	<Version>$(FileVersion)</Version>
+	  
   </PropertyGroup>
 
   <ItemGroup>

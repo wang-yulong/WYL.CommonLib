@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>netstandard2.0;net45</TargetFrameworks>
+    <Description>Edu NLog的二次封装</Description>
+    <Copyright>CopyRight@Edu 2023</Copyright>
+	<AssemblyVersion>1.0.0.1</AssemblyVersion>
+	<FileVersion>1.0.0.1</FileVersion>
+	<Version>$(FileVersion)</Version>
+	<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+</PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="NLog" Version="5.1.1" />
+  </ItemGroup>
+
+</Project>

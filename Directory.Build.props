@@ -3,8 +3,7 @@
   <PropertyGroup>
     <Authors>王玉龙</Authors>
     <Company>玲珑科技</Company>
-	<AssemblyVersion>1.0.0.18</AssemblyVersion>
-	<FileVersion>1.0.0.18</FileVersion>
+	
 	<TargetFramework1>net45</TargetFramework1>
 	<TargetFramework2>net461</TargetFramework2>
 

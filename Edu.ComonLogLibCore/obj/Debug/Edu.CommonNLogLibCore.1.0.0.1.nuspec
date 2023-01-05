@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>Edu.CommonNLogLibCore</id>
+    <version>1.0.0.1</version>
+    <authors>王玉龙</authors>
+    <description>Edu NLog的二次封装</description>
+    <copyright>CopyRight@Edu 2023</copyright>
+    <repository type="git" url="https://github.com/wang-yulong/WYL.CommonLib.git" commit="b1db7f26f4b5e88581986c3e71ac396250834007" />
+    <dependencies>
+      <group targetFramework=".NETFramework4.5">
+        <dependency id="NLog" version="5.1.1" exclude="Build,Analyzers" />
+      </group>
+      <group targetFramework=".NETStandard2.0">
+        <dependency id="NLog" version="5.1.1" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="D:\工作\Code\Nuget_Git\WYL.CommonLib\Edu.ComonLogLibCore\bin\Debug\net45\Edu.CommonNLogLibCore.pdb" target="lib\net45\Edu.CommonNLogLibCore.pdb" />
+    <file src="D:\工作\Code\Nuget_Git\WYL.CommonLib\Edu.ComonLogLibCore\bin\Debug\netstandard2.0\Edu.CommonNLogLibCore.pdb" target="lib\netstandard2.0\Edu.CommonNLogLibCore.pdb" />
+    <file src="D:\工作\Code\Nuget_Git\WYL.CommonLib\Edu.ComonLogLibCore\bin\Debug\net45\Edu.CommonNLogLibCore.dll" target="lib\net45\Edu.CommonNLogLibCore.dll" />
+    <file src="D:\工作\Code\Nuget_Git\WYL.CommonLib\Edu.ComonLogLibCore\bin\Debug\netstandard2.0\Edu.CommonNLogLibCore.dll" target="lib\netstandard2.0\Edu.CommonNLogLibCore.dll" />
+  </files>
+</package>

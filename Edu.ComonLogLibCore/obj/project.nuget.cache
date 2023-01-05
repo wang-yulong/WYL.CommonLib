@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "1/1+Qf3pLrZ0t+EnyJt+rEYBO6o6NPCiASVIrbum+NfDrjBthKcUKjOAAQM3OrSqbT7eblk+99A03a22PHRNOg==",
+  "success": true,
+  "projectFilePath": "D:\\工作\\Code\\Nuget_Git\\WYL.CommonLib\\Edu.ComonLogLibCore\\Edu.CommonNLogLibCore.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\EDUTECH\\.nuget\\packages\\microsoft.build.tasks.git\\1.0.0\\microsoft.build.tasks.git.1.0.0.nupkg.sha512",
+    "C:\\Users\\EDUTECH\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\EDUTECH\\.nuget\\packages\\microsoft.sourcelink.common\\1.0.0\\microsoft.sourcelink.common.1.0.0.nupkg.sha512",
+    "C:\\Users\\EDUTECH\\.nuget\\packages\\microsoft.sourcelink.github\\1.0.0\\microsoft.sourcelink.github.1.0.0.nupkg.sha512",
+    "C:\\Users\\EDUTECH\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
+    "C:\\Users\\EDUTECH\\.nuget\\packages\\nlog\\5.1.1\\nlog.5.1.1.nupkg.sha512"
+  ],
+  "logs": []
+}

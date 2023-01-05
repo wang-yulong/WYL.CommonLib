@@ -1,0 +1,12 @@
+D:\工作\Code\Nuget_Git\WYL.CommonLib\Edu.ComonLogLibCore\obj\Debug\net45\Edu.CommonNLogLibCore.csproj.AssemblyReference.cache
+D:\工作\Code\Nuget_Git\WYL.CommonLib\Edu.ComonLogLibCore\obj\Debug\net45\Edu.CommonNLogLibCore.GeneratedMSBuildEditorConfig.editorconfig
+D:\工作\Code\Nuget_Git\WYL.CommonLib\Edu.ComonLogLibCore\obj\Debug\net45\Edu.CommonNLogLibCore.AssemblyInfoInputs.cache
+D:\工作\Code\Nuget_Git\WYL.CommonLib\Edu.ComonLogLibCore\obj\Debug\net45\Edu.CommonNLogLibCore.AssemblyInfo.cs
+D:\工作\Code\Nuget_Git\WYL.CommonLib\Edu.ComonLogLibCore\obj\Debug\net45\Edu.CommonNLogLibCore.csproj.CoreCompileInputs.cache
+D:\工作\Code\Nuget_Git\WYL.CommonLib\Edu.ComonLogLibCore\obj\Debug\net45\Edu.CommonNLogLibCore.sourcelink.json
+D:\工作\Code\Nuget_Git\WYL.CommonLib\Edu.ComonLogLibCore\bin\Debug\net45\Edu.CommonNLogLibCore.dll
+D:\工作\Code\Nuget_Git\WYL.CommonLib\Edu.ComonLogLibCore\bin\Debug\net45\Edu.CommonNLogLibCore.pdb
+D:\工作\Code\Nuget_Git\WYL.CommonLib\Edu.ComonLogLibCore\bin\Debug\net45\NLog.dll
+D:\工作\Code\Nuget_Git\WYL.CommonLib\Edu.ComonLogLibCore\obj\Debug\net45\Edu.CommonNLogLibCore.csproj.CopyComplete
+D:\工作\Code\Nuget_Git\WYL.CommonLib\Edu.ComonLogLibCore\obj\Debug\net45\Edu.CommonNLogLibCore.dll
+D:\工作\Code\Nuget_Git\WYL.CommonLib\Edu.ComonLogLibCore\obj\Debug\net45\Edu.CommonNLogLibCore.pdb
