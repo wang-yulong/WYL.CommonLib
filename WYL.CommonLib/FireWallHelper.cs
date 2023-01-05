@@ -11,7 +11,7 @@ namespace Edu.CommonLibCore
     /// 防火墙操作工具类
     /// <para>author:wangyulong</para>
     /// </summary>
-    internal class FireWallHelp
+    public class FireWallHelp
     {
         /// <summary>
         /// 添加防火墙例外端口

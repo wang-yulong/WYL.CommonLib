@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFrameworks>net45</TargetFrameworks>
+    <TargetFrameworks>net45;net461</TargetFrameworks>
     <Description>基础类库封装</Description>
     <Copyright>copyright(2022)</Copyright>
     <PackageProjectUrl>https://github.com/wang-yulong/Edu.CommonLibCore.git</PackageProjectUrl>
@@ -14,6 +14,7 @@
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
 	
 	<GenerateDocumentationFile>True</GenerateDocumentationFile>
+	<Version>$(FileVersion)</Version>
   </PropertyGroup>
 
   <ItemGroup>
@@ -30,7 +31,19 @@
       <Pack>True</Pack>
       <PackagePath>\</PackagePath>
     </None>
+	 
+
+	<Content Include="..\Dlls\Interop.NetFwTypeLib.dll">
+		<Pack>True</Pack>
+		<PackagePath>Content</PackagePath>
+	</Content>
+	  <Content Include="..\Dlls\Interop.NetFwTypeLib.dll">
+		  <Pack>True</Pack>
+		  <PackagePath>Content</PackagePath>
+	  </Content>
   </ItemGroup>
+	
+	
 
   <ItemGroup Condition="'$(TargetFramework)' == 'netstandard2.0'">
     <PackageReference Include="System.Drawing.Common">
