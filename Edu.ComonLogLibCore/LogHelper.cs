@@ -101,8 +101,20 @@ namespace Edu.CommonNLogLibCore
                 config.AddRule(LogLevel.Trace, LogLevel.Trace, traceLog);
                 config.AddRule(LogLevel.Fatal, LogLevel.Fatal, fatalLog);
 
-                // Apply config           
-                LogManager.Configuration = config;
+                if (LogManager.Configuration == null)
+                {
+                    // Apply config           
+                    LogManager.Configuration = config;
+                }
+                else
+                {
+                    //主工程已设置，此处无需设置
+                    if (LogManager.Configuration.LoggingRules.Count < config.LoggingRules.Count)
+                    {
+                        // Apply config           
+                        LogManager.Configuration = config;
+                    }
+                }
             }
             catch (Exception ex)
             {
