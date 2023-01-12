@@ -5,8 +5,6 @@ using System.Drawing.Drawing2D;
 using System.Drawing.Imaging;
 using System.IO;
 using System.Windows;
-using System.Windows.Interop;
-using System.Windows.Media.Imaging;
 using Point = System.Drawing.Point;
 
 namespace Edu.CommonLibCore
@@ -232,30 +230,6 @@ namespace Edu.CommonLibCore
             pickedImage.Dispose();
 
             return true;
-        }
-
-        #endregion
-
-        #region BitmapSource构建
-
-
-        /// <summary>
-        /// 转换本地图片到ImageSource
-        /// </summary>
-        /// <param name="headUrl"></param>
-        /// <returns></returns>
-        public static BitmapSource ConvertLocalFileToBitmapSource(string localImgPath)
-        {
-            /*   if (!File.Exists(localImgPath)) return null;
-               Bitmap bitMap = ImageHelper.CreateBitmap(localImgPath);
-               IntPtr ip = bitMap.GetHbitmap();
-               BitmapSource bitmapSource = Imaging.CreateBitmapSourceFromHBitmap(ip, IntPtr.Zero, Int32Rect.Empty,
-                    BitmapSizeOptions.FromWidthAndHeight(bitMap.Width, bitMap.Height));
-               DeleteObject(ip);
-               bitMap.Dispose();
-               return bitmapSource;*/
-
-            return null;
         }
 
         #endregion

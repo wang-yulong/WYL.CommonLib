@@ -3,6 +3,7 @@
   <PropertyGroup>
     <Authors>EduPcTeam</Authors>
     <Company>上海易教科技股份有限公司</Company>
+	<NugetPackDir>D:\Nuget\Publish\nuget.org</NugetPackDir>
 	
 	<TargetFramework1>net45</TargetFramework1>
 	<TargetFramework2>net461</TargetFramework2>
