@@ -11,7 +11,7 @@
     <PackageTags>wyl</PackageTags>
     <PackageReleaseNotes>基础类库封装</PackageReleaseNotes>
     <PackageLicenseFile>LICENSE</PackageLicenseFile>
-    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <GeneratePackageOnBuild>False</GeneratePackageOnBuild>
 	<GenerateDocumentationFile>True</GenerateDocumentationFile>
 	<AssemblyVersion>1.0.0.18</AssemblyVersion>
 	<FileVersion>1.0.0.18</FileVersion>

@@ -4,11 +4,15 @@
     <TargetFrameworks>netstandard2.0;net45</TargetFrameworks>
     <Description>Edu NLog的二次封装</Description>
     <Copyright>CopyRight@Edu 2023</Copyright>
-	<AssemblyVersion>1.0.0.2</AssemblyVersion>
-	<FileVersion>1.0.0.2</FileVersion>
+	<AssemblyVersion>1.0.0.6</AssemblyVersion>
+	<FileVersion>1.0.0.6</FileVersion>
 	<Version>$(FileVersion)</Version>
-	<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
-	<Title>上海易教；通用日志库</Title>
+	<GeneratePackageOnBuild>False</GeneratePackageOnBuild>
+	<Tags>上海易教；通用日志库</Tags>
+	<GenerateDocumentationFile>True</GenerateDocumentationFile>
+	<PackageOutputPath>D:\Nuget\Publish\nuget.org</PackageOutputPath>
+	<PackageProjectUrl>https://gitee.com/wylzxc/Edu.CommonNLogLibCore</PackageProjectUrl>
+	<PackageTags>上海易教；通用日志库</PackageTags>
 </PropertyGroup>
 
   <ItemGroup>

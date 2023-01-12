@@ -15,7 +15,6 @@ namespace Edu.CommonNLogLibCore
     {
         #region 属性
 
-        private static string _baseDir;
         private static string _logDir;
         private static Logger Logger;
 
@@ -23,9 +22,13 @@ namespace Edu.CommonNLogLibCore
 
         #region 初始化
 
-        public static void Init(string baseDir, string logDir)
+        /// <summary>
+        /// 初始化日志目录
+        /// <para>为空时，默认书写到Debug目录下</para>
+        /// </summary>
+        /// <param name="logDir"></param>
+        public static void Init(string logDir)
         {
-            _baseDir = baseDir;
             _logDir = logDir;
 
             DftInit();
@@ -35,16 +38,19 @@ namespace Edu.CommonNLogLibCore
         {
             try
             {
-                string fileName = _baseDir + "/logs/${shortdate}.log";
-                string tracefileName = _baseDir + "/logs/${shortdate}_Trace.log";
-                string offfileName = _baseDir + "/logs/${shortdate}_Final.log";
+                string fileName = "${basedir}/logs/${shortdate}.log";
+                string tracefileName = "${basedir}/logs/${shortdate}_Trace.log";
+                string offfileName = "${basedir}/logs/${shortdate}_Final.log";
 
-                var logDir = _logDir;
                 bool isNewLogDirSuccess = true;
                 try
                 {
-                    if (!Directory.Exists(logDir))
-                        Directory.CreateDirectory(logDir);
+                    if (!Directory.Exists(_logDir))
+                        Directory.CreateDirectory(_logDir);
+
+                    string newLogDir = Path.Combine(_logDir, "logs");
+                    if (!Directory.Exists(newLogDir))
+                        Directory.CreateDirectory(newLogDir);
                 }
                 catch (Exception ex)
                 {
@@ -52,11 +58,11 @@ namespace Edu.CommonNLogLibCore
                 }
                 if (isNewLogDirSuccess)
                 {
-                    if (!string.IsNullOrEmpty(logDir))
+                    if (!string.IsNullOrEmpty(_logDir))
                     {
-                        fileName = logDir + "/logs/${shortdate}.log";
-                        tracefileName = logDir + "/logs/${shortdate}_Trace.log";
-                        offfileName = logDir + "/logs/${shortdate}_Final.log";
+                        fileName = _logDir + "/logs/${shortdate}.log";
+                        tracefileName = _logDir + "/logs/${shortdate}_Trace.log";
+                        offfileName = _logDir + "/logs/${shortdate}_Final.log";
                     }
                 }
 
