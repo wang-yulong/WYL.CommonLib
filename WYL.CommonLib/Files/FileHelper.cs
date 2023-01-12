@@ -8,8 +8,10 @@ using System.Runtime.InteropServices;
 using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
+#if NET45
 using System.Windows.Forms;
 using OpenFileDialog = System.Windows.Forms.OpenFileDialog;
+#endif
 
 namespace Edu.CommonLibCore.Files
 {
@@ -381,7 +383,7 @@ namespace Edu.CommonLibCore.Files
             return filePath;
         }
 
-        #region 文件框选择
+    /*    #region 文件框选择
 
 
         /// <summary>
@@ -436,7 +438,7 @@ namespace Edu.CommonLibCore.Files
             else return null;
         }
 
-        #endregion
+        #endregion*/
 
         #region 读文件
 
@@ -914,6 +916,7 @@ namespace Edu.CommonLibCore.Files
         /// </summary>
         public static void GetAllInstallsPrograms()
         {
+#if NET45
             int i = 0;
             string registry_key = @"SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall";
             using (Microsoft.Win32.RegistryKey key = Registry.LocalMachine.OpenSubKey(registry_key))
@@ -926,6 +929,7 @@ namespace Edu.CommonLibCore.Files
                     }
                 }
             }
+            #endif
         }
 
         #region 获取默认打开程序

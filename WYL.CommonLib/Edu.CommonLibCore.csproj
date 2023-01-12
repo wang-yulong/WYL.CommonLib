@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFrameworks>net45</TargetFrameworks>
+    <TargetFrameworks>netstandard2.0;net45</TargetFrameworks>
     <Description>基础类库封装</Description>
     <Copyright>copyright(2022)</Copyright>
     <PackageProjectUrl>https://github.com/wang-yulong/Edu.CommonLibCore.git</PackageProjectUrl>
@@ -13,8 +13,8 @@
     <PackageLicenseFile>LICENSE</PackageLicenseFile>
     <GeneratePackageOnBuild>False</GeneratePackageOnBuild>
 	<GenerateDocumentationFile>True</GenerateDocumentationFile>
-	<AssemblyVersion>1.0.0.19</AssemblyVersion>
-	<FileVersion>1.0.0.19</FileVersion>
+	<AssemblyVersion>1.0.0.20</AssemblyVersion>
+	<FileVersion>1.0.0.20</FileVersion>
 	<Version>$(FileVersion)</Version>
 	<PackageOutputPath>$(NugetPackDir)\$(AssemblyName)</PackageOutputPath>
 	<IncludeSymbols>False</IncludeSymbols>

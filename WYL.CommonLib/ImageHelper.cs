@@ -237,6 +237,7 @@ namespace Edu.CommonLibCore
 
         #region 屏幕截图
 
+#if NET45
         /// <summary>
         /// 截取全屏幕图像
         /// </summary>
@@ -263,8 +264,9 @@ namespace Edu.CommonLibCore
             gp.Dispose();
             return mimage;
         }
+#endif
 
-        #endregion
+#endregion
 
         #region 辅助处理
 

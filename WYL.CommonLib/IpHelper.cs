@@ -8,7 +8,9 @@ using System.Net;
 using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
+#if NET45
 using System.Management;
+#endif
 
 namespace Edu.CommonLibCore
 {
@@ -17,6 +19,7 @@ namespace Edu.CommonLibCore
         public static List<IPAddress> GetLocalIPV4(bool getAll = false)
         {
             var ret = new List<IPAddress>();
+#if NET45
             try
             {
                 ///排除了Microsoft 的 tunneling, miniport, WAN等类型的虚拟网卡
@@ -63,6 +66,7 @@ namespace Edu.CommonLibCore
             }
             //MessageBox.Show("请检查本机是否是双网卡？且默认网段是否配置正确？", "错误");
             //CommonUtil.ExcuteKill("CastScreenClient");//强行关闭进程
+#endif
             return ret;
         }
 

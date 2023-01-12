@@ -3,20 +3,25 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
 using System.Linq;
+#if NET45
 using System.Management;
+#endif
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 
 namespace Edu.CommonLibCore
 {
+#if NET45
     /// <summary>
     /// 进程操作工具类
     /// <para>author:wangyulong</para>
     /// </summary>
     public class ProcessHelper
     {
+
         static Dictionary<string, PerformanceCounter> processCpuntDic = new Dictionary<string, PerformanceCounter>();
+
 
         /// <summary>
         /// 进程是否存在
@@ -188,6 +193,7 @@ namespace Edu.CommonLibCore
         /// <param name="childProcessList"></param>
         public static void GetChilidProcess(Process currentProcess, ref List<Process> childProcessList)
         {
+#if NET45
             try
             {
                 ManagementObjectSearcher searcher = new ManagementObjectSearcher("Select * From Win32_Process Where ParentProcessID=" + currentProcess.Id);
@@ -204,6 +210,7 @@ namespace Edu.CommonLibCore
             {
                 throw ex;
             }
+#endif
         }
 
 #region 检测某某程序是否已安装
@@ -237,4 +244,5 @@ namespace Edu.CommonLibCore
 
 #endregion
     }
+#endif
 }
