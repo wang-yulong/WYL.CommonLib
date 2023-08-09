@@ -3,7 +3,7 @@
   <PropertyGroup>
     <TargetFrameworks>netstandard2.0;net45</TargetFrameworks>
     <Description>基础类库封装</Description>
-    <Copyright>copyright(2022)</Copyright>
+    <Copyright>copyright(2023)</Copyright>
     <PackageProjectUrl>https://github.com/wang-yulong/Edu.CommonLibCore.git</PackageProjectUrl>
     <PackageReadmeFile>README.md</PackageReadmeFile>
     <RepositoryUrl>https://github.com/wang-yulong/Edu.CommonLibCore.git</RepositoryUrl>
@@ -13,15 +13,21 @@
     <PackageLicenseFile>LICENSE</PackageLicenseFile>
     <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
 	<GenerateDocumentationFile>True</GenerateDocumentationFile>
-	<AssemblyVersion>1.0.0.23</AssemblyVersion>
-	<FileVersion>1.0.0.23</FileVersion>
-	<Version>$(FileVersion)</Version>
+	<AssemblyVersion>1.0.0.31</AssemblyVersion>
+	<FileVersion>1.0.0.31</FileVersion>
+	<Version>1.0.0.31</Version>
 	<PackageOutputPath>$(NugetPackDir)\$(AssemblyName)</PackageOutputPath>
 	<IncludeSymbols>False</IncludeSymbols>
 	  
   </PropertyGroup>
 
+  <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|netstandard2.0|AnyCPU'">
+    <WarningLevel>5</WarningLevel>
+    <DocumentationFile />
+  </PropertyGroup>
+
   <ItemGroup>
+    <Compile Remove="FireWallHelper.cs" />
     <Compile Remove="Services\OSS\AliObjectService.cs" />
     <Compile Remove="Services\OSS\IObjectService.cs" />
     <Compile Remove="WindowHelper.cs" />
@@ -62,8 +68,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Reference Include="..\Dlls\Interop.NetFwTypeLib.dll">
-    </Reference>
     <Reference Include="System.Management" />
     <Reference Include="System.Windows.Forms" />
   </ItemGroup>
