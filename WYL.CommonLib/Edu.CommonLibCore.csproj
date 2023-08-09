@@ -11,10 +11,10 @@
     <PackageTags>wyl</PackageTags>
     <PackageReleaseNotes>基础类库封装</PackageReleaseNotes>
     <PackageLicenseFile>LICENSE</PackageLicenseFile>
-    <GeneratePackageOnBuild>False</GeneratePackageOnBuild>
+    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
 	<GenerateDocumentationFile>True</GenerateDocumentationFile>
-	<AssemblyVersion>1.0.0.22</AssemblyVersion>
-	<FileVersion>1.0.0.22</FileVersion>
+	<AssemblyVersion>1.0.0.23</AssemblyVersion>
+	<FileVersion>1.0.0.23</FileVersion>
 	<Version>$(FileVersion)</Version>
 	<PackageOutputPath>$(NugetPackDir)\$(AssemblyName)</PackageOutputPath>
 	<IncludeSymbols>False</IncludeSymbols>
@@ -22,6 +22,8 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Services\OSS\AliObjectService.cs" />
+    <Compile Remove="Services\OSS\IObjectService.cs" />
     <Compile Remove="WindowHelper.cs" />
   </ItemGroup>
 
@@ -42,26 +44,18 @@
 
 	  <!--https://learn.microsoft.com/zh-cn/nuget/reference/msbuild-targets-->
 	 <!--Copy依赖的dll到输出目录，默认会在Nuget生成content,contentFile文件夹-->
-	<Content Include="..\Dlls\Interop.NetFwTypeLib.dll">
-		<Pack>True</Pack>
-	</Content>
 
   </ItemGroup>
 	
 	
 
   <ItemGroup Condition="'$(TargetFramework)' == 'netstandard2.0'">
-    <PackageReference Include="Aliyun.OSS.SDK.NetCore">
-      <Version>2.13.0</Version>
-    </PackageReference>
     <PackageReference Include="System.Drawing.Common">
       <Version>7.0.0</Version>
     </PackageReference>
   </ItemGroup>
 
-	<ItemGroup Condition="'$(TargetFramework)' == 'net45'">
-		<PackageReference Include="Aliyun.OSS.SDK" Version="2.13.0" />
-	</ItemGroup>
+	
 
   <ItemGroup>
     <PackageReference Include="Newtonsoft.Json" Version="12.0.1" />
@@ -72,6 +66,10 @@
     </Reference>
     <Reference Include="System.Management" />
     <Reference Include="System.Windows.Forms" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Services\OSS\" />
   </ItemGroup>
 
 </Project>
